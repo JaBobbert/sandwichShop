@@ -27,13 +27,41 @@ public class sandwichShop {
 
         if (age <= 17){
             System.out.println("You will receive a 10% discount.");
+            if (size == 1){
+                System.out.println("You will pay $" + ((.10*5.45) + (5.45)));
+            }
+            else if (size == 2) {
+                System.out.println("You will pay $" + ((.10*8.95) + (8.95)));
+            }
+            else {
+                System.out.println("Invalid answer");
+            }
         }
         else if (age >= 65){
             System.out.println("You will receive a 20% discount");
+            if (size == 1){
+                System.out.println("You will pay $" + ((.20*5.45) + (5.45)));
+            }
+            else if (size == 2) {
+                System.out.println("You will pay $" + ((.20*8.95) + (8.95)));
+            }
+            else {
+                System.out.println("Invalid answer");
+            }
         }
         else {
             System.out.println("You don't receive no discount");
+            if (size == 1){
+                System.out.println("You will pay $" + (5.45));
+            }
+            else if (size == 2) {
+                System.out.println("You will pay $" + (8.95));
+            }
+            else {
+                System.out.println("Invalid answer");
+            }
         }
         //End of age question
+        scan.close();
     }
 }
